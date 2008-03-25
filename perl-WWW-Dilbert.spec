@@ -7,7 +7,7 @@
 %define	pdir	WWW
 %define	pnam	Dilbert
 Summary:	WWW::Dilbert - Retrieve Dilbert of the day comic strip images
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	WWW::Dilbert - pobieranie aktualnej strony komiksu "Dilbert of the day"
 Name:		perl-WWW-Dilbert
 Version:	1.19
 Release:	1
@@ -19,9 +19,9 @@ URL:		http://search.cpan.org/dist/WWW-Dilbert/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
-BuildRequires:	perl-libwww
 BuildRequires:	perl-Test-Pod
 BuildRequires:	perl-Test-Pod-Coverage
+BuildRequires:	perl-libwww
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,8 +31,10 @@ This module will download the latest Dilbert of the Day cartoon strip
 from the Dilbert website and return a binary blob of the image, or
 write it to disk. 
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Ten moduł ściąga ostatnią stronę komiksu "Dilbert of the Day" ze
+strony WWW Dilberta i zwraca ją w postaci binarnej lub zapisuje na
+dysk.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
