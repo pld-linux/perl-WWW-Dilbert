@@ -9,7 +9,7 @@ Summary:	WWW::Dilbert - Retrieve Dilbert of the day comic strip images
 Summary(pl.UTF-8):	WWW::Dilbert - pobieranie aktualnej strony komiksu "Dilbert of the day"
 Name:		perl-WWW-Dilbert
 Version:	1.19
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
